@@ -20,6 +20,7 @@ class BmiOnBoarding extends StatelessWidget {
               color: AppColors.primary,
               borderRadius: BorderRadius.circular(25),
             ),
+            height: 300,
             child: Padding(
               padding: EdgeInsets.all(21),
               child: Column(

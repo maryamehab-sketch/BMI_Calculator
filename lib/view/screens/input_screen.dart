@@ -93,7 +93,7 @@ class _BmiInputScreenState extends State<BmiInputScreen> {
               ),
             ],
           ),
-          SizedBox(height: 16),
+          SizedBox(height: 20),
           IncrementalTextFormField(
             controller: heightController,
             onDecrementTap: () {
@@ -114,6 +114,7 @@ class _BmiInputScreenState extends State<BmiInputScreen> {
             },
             title: "Your Height(cm)",
           ),
+          SizedBox(height: 20),
           IncrementalTextFormField(
             controller: weightController,
             onDecrementTap: () {
@@ -134,10 +135,10 @@ class _BmiInputScreenState extends State<BmiInputScreen> {
             },
             title: "Your Weight(Km)",
           ),
-          SizedBox(height: 24),
+          SizedBox(height: 30),
           SizedBox(
             width: 300,
-            height: 45,
+            height: 50,
             child: ElevatedButton(
               onPressed: () async {
                 Map<String, dynamic> res = await repo.calcBmi(
